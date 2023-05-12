@@ -36,14 +36,6 @@
          url('assets/fonts/BeVietnamPro-SemiBoldItalic.ttf') format('truetype');
 }
 
-@font-face {
-    font-family: 'Wotfard';
-    font-weight: 400;
-    src: url('assets/fonts/Wotfard-Regular.woff2') format('woff2'),
-         url('assets/fonts/Wotfard-Regular.eot'),
-         url('assets/fonts/Wotfard-Regular.ttf') format('truetype');
-}
-
 :root { 
     --font-size--h1: 4rem; /* 64px */
     --font-size--h2-callout: 2rem; /* 32px */
@@ -123,20 +115,16 @@ a {
     margin-bottom: 4rem;
 }
 
-.padding--0rem {
-    padding: 0 !important;
-}
-
 .padding-top--0rem {
     padding-top: 0 !important;
 }
 
-.padding-top--1rem {
-    padding-top: 1rem;
-}
-
 .padding-bottom--0rem {
     padding-bottom: 0 !important;
+}
+
+.padding-top--1rem {
+    padding-top: 1rem;
 }
 
 .round {
@@ -161,7 +149,7 @@ a {
 .pink { background-color: var(--pink) !important; }
 .lightblue { background-color: var(--lightblue) !important; }
 
-.urbanco { background-color: #b5dde4; }
+.urbanco { background-color: #c3e5eb; }
 .newspace { background-color: #ffd194; }
 .recyclenook { background-color: #bed9b6; }
 .cinefest { background-color: #FFEED4; }
@@ -354,8 +342,7 @@ nav ul li:last-child {
     height: 0%;
 }
 
-#swiper .top-layer,
-#procreate--chart .top-layer {
+#swiper .top-layer {
     padding: 0rem;
     overflow: hidden;
 }
@@ -692,6 +679,12 @@ footer {
     gap: 1rem;
 }
 
+#procreate--chart {
+    border: 2px solid black;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
 #procreate--wireframes .img-text {
     gap: 1rem;
     text-align: center;
@@ -742,17 +735,12 @@ footer {
 }
 
 .about--info.col {
-    display: flex;
     flex-direction: column;
     align-items: start;
 }
 
-.about--info.col img {
-    width: 100%;
-}
-
 .about--info img {
-    width: 7rem;
+    width: 28%;
 }
 
 #hadestown {
@@ -761,9 +749,22 @@ footer {
     object-fit: cover;
 }
 
-#index--hero h1 { grid-area: h1; align-self: last baseline;}
-#index--hero p { grid-area: p; align-self: first baseline; }
-#index--hero img { grid-area: img; position:relative; right: -30px; top: -40px; }
+#index--hero h1  { 
+    grid-area: h1; 
+    align-self: last baseline;
+}
+
+#index--hero p { 
+    grid-area: p; 
+    align-self: first baseline; 
+}
+
+#index--hero img { 
+    grid-area: img; 
+    position:relative; 
+    top: -40px; 
+    right: -30px; 
+}
 
 /* Index */ 
 #index--hero {
@@ -779,8 +780,8 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    gap: 3rem;
     padding: 3rem;
+    column-gap: 4rem !important;
     transition: all 0.5s ease;
 }
 
@@ -855,7 +856,7 @@ table tr:last-child th, table tr:last-child td {
         width: 50%;
     }
 
-    #index--hero {
+    #index--hero{
         text-align: center;
         justify-items: center;
         grid-template-areas: 
@@ -865,9 +866,9 @@ table tr:last-child th, table tr:last-child td {
     }
 
     #index--hero img { 
-        height: 50vw;
+        height: 60vw;
         width: auto;
-        top: 0px;
+        top: 15px;
         right: 0px;
     }
 
@@ -1075,7 +1076,6 @@ table tr:last-child th, table tr:last-child td {
         max-width: 50%;
         height: 100%;
     }
-
 
     #recyclenook--hifi img {
         width: 100%;
