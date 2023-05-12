@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Minnie Chau | Procreate</title>
+    <meta name="description" content="We examine ways to improve collaboration and communication on Procreate."/>
+    <link rel="icon" href="/media/toast_logo.png">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" href="https://css.gg/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600&display=swap">
+
+    <!-- Script -->
+    <script src="js/script.js"></script>
+    <script src = "js/swiper.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="./">
+                <img src="media/toast_logo.png" alt="Toast Logo">
+            </a>
+            <ul>
+                <li>
+                    <a href="./" class="underline--hidden animate">Works</a>
+                </li>         
+                <li> <a href="./about.html" class="underline--hidden animate">About</a>
+                </li>
+
+                <li> <a href="./misc.html" class="underline--hidden animate">Misc</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="wrapper">
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero--intro">
+                <h1>Collaborate on Procreate</h1>
+                <p>
+                    Procreate is a popular iPad digital art application widely used by professional and recreational artists, yet it currently <span class="underline--visible"><strong>lacks streamlined collaboration features</strong></span>. We aimed to improve Procreate’s collaboration and communication process, making it more efficient to do collaborative tasks such as drawing simultaneously, sharing pieces, and making feedback-based edits.
+                </p>
+            </div>
+           
+            <div class="hero--duties back-layer">
+                <div class="top-layer gap--2rem animate">
+                    <li>
+                        <strong>Role</strong>
+                        <br>UX/UI Design, Research & Testing, UX&nbsp;Writing
+                    </li>
+                    <li>
+                        <strong>Team</strong>
+                        <br>Rhiannon Lang, Elina Shankar, Janet&nbsp;Wong
+                    </li>
+                    <li>
+                        <strong>Tools</strong>
+                        <br>Figma, Google Drive
+                    </li>
+                    <li>
+                        <strong>Timeline</strong>
+                        <br>10 weeks (Jan to Mar 2022)
+                    </li>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Hero Splash-->
+        <section class="full-width">
+            <div class="hero--splash__ipad">
+                <img src="/media/procreate/final-comments-space.png" alt="Procreate Splash - Comments example with spaceship" class="to-hide">
+
+                <img src="/media/procreate/final-markups-truck.png" alt="Procreate Splash - Markups example with truck" class="to-hide">
+
+                <img src="/media/procreate/final-comments.png" alt="Procreate Splash - Comments example with comic">
+
+                <img src="/media/procreate/final-markups.png" alt="Procreate Splash - Markups example with comic henchmen">
+            </div>
+        </section>
+
+        <!-- Introduction-->
+        <article class="full-width to-expand">
+            <section class="wrapper">
+                <h2>Collaboration on Procreate is tedious.</h2>
+                <p>
+                   Currently, users rely on third-party applications to share files with others (Google Drive, Dropbox). Direct feedback cannot be received or provided on a file either, which can cause communication delays or confusion. <br><br>
+                   
+                   Moreover, adding collaboration to Procreate is beneficial in online educational and professional settings where communication, learning, and working together have become limited by digital technology and remote work.
+                </p>      
+            </section>
+
+            <!-- Forum -->
+            <div class="back-layer">
+                <div class="top-layer gap--2rem">
+
+                    <div class="grid-2col" id="procreate--forum">
+                        <img src="/media/procreate/forum-1.png" alt="Procreate forum">
+
+                        <img src="/media/procreate/forum-2.png" alt="">
+                    </div>
+                    
+
+                    <figcaption style="text-align: center">
+                        Procreate forum users have requested collaboration features for years.
+                    </figcaption>
+                </div>
+            </div>
+        </article>
+
+        <!-- User Research Findings -->
+        <article class="full-width">
+            <section class="wrapper">
+                <div>
+                    <h2>What do users say?</h2>
+                    <p>
+                        We released a Google Forms survey to various art-related and student-based online communities, and interviewed 8 people to gain qualitative insight into their experiences about collaborating on Procreate.
+                    </p>
+                </div>
+            </section>
+            
+            <section id="procreate--chart">
+                <div class="back-layer">
+                    <div class="top-layer beige">
+                        <table>
+                            <tr>
+                                <th class="to-hide"></th>
+                                <th>Problems with Procreate</th>
+                                <th>Desires for Procreate</th>
+                            </tr>
+            
+                            <tr>
+                                <th class="to-hide">Collaboration Abilities</th>
+                                <td>Single-user interface, no support for multi-user collaboration</td>
+                                <td>Live collaboration, "multiple people drawing" at the same time</td>
+                            </tr>
+        
+                            <tr>
+                                <th class="to-hide">Sharing Files</th>
+                                <td>Send and download files, lots of “back and forth” and “waiting</td>
+                                <td>
+                                    Cloud storage, share across devices (desktop, iPad, non-Apple iOS)
+                                </td>
+                            </tr>
+        
+                            <tr>
+                                <th class="to-hide">Tools & Features</th>
+                                <td>Lacks tools for collaboration, use other art programs</td>
+                                <td>Make editing suggestions with a “comment or [drawing] layer”</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <div class="callout last">
+                <h2 class="underline--visible">
+                    How might we apply collaboration features to Procreate by utilizing familiar collaboration terminology, tools, and icons?
+                </h2>
+            </div>
+
+        </article>
+
+        <!-- Competitive Analysis -->
+        <article class="full-width to-expand">
+            <div class="back-layer">
+                <div class="top-layer gap--2rem">
+                    <h2 class="margin-bottom--0rem">Competitive Analysis</h2>
+
+                    <figcaption> 
+                        We examined 5 programs that have cloud storage and real-time collaboration to identify how Procreate could be improved. Currently, Procreate is <em><strong>behind</strong></em> the industry standard for collaboration. 
+                    </figcaption>
+
+                    <img src="/media/procreate/competitive-analysis.png" alt="Competitive Analysis">
+                </div>
+            </div> 
+        </article>
+
+        <!-- UX Flow, Wireframes -->
+        <section class="full-width">
+            <section>
+                <h2 class="margin-bottom--2rem">Mapping out user flow and wireframes</h2>
+                <img src="/media/procreate/ux-flow.svg" alt="UX Flow" class="margin-bottom--2rem">
+            </section>
+           
+            <section>
+                <h2 class="margin-bottom--2rem">Wireframes</h2>
+                <div class="grid-2col" id="procreate--wireframes">
+                    <div class="img-text">
+                        <img src="/media/procreate/wireframe-1.svg" alt="Wireframe: Open Comments tab" class="round outline">
+    
+                        <figcaption><em>Open Comments tab</em></figcaption>
+                    </div>
+                    
+                    <div class="img-text">
+                        <img src="/media/procreate/wireframe-2.svg" alt="Wireframe: View new Comment on Canvas" class="round outline">
+
+                        <figcaption><em>View new Comment on Canvas</em></figcaption>
+                    </div>
+
+                    <div class="img-text">
+                        <img src="/media/procreate/wireframe-3.svg" alt="Wireframe: Reply to Comment" class="round outline">
+
+                        <figcaption><em>Reply to Comment</em></figcaption>
+                    </div>
+
+                    <div class="img-text center">
+                        <img src="/media/procreate/wireframe-4.svg" alt="Wireframe: View Markup suggestion" class="round outline">
+
+                        <figcaption><em>View Markup suggestion</em></figcaption>
+                    </div>
+
+                    <div class="img-text center">
+                        <img src="/media/procreate/wireframe-5.svg" alt="Wireframe: Share Procreate file" class="round outline">
+
+                        <figcaption><em>Share Procreate file</em></figcaption>
+                    </div>
+
+                    <div class="img-text center">
+                        <img src="/media/procreate/wireframe-6.svg" alt="Wireframe: Auto-save to Cloud: first time pop-up" class="round outline">
+
+                        <figcaption><em>Auto-save to Cloud: first time pop-up</em></figcaption>
+                    </div>
+                </div>
+            </section>
+        </section>
+        
+        <!-- Lo-Fidelity Testing-->
+        <article>
+            <div class="back-layer">
+                <div class="top-layer gap--2rem">
+                    <h2 class="margin-bottom--0rem">Lo-Fi Prototype Testing</h2>
+                    <p> 
+                        We tested 3 participants (21-26 year old students) to help us refine our ideas. They provided suggestions for improvements, such as separating Comments and Markups for more clarity. 
+                    </p>
+                    
+                    <img src="/media/procreate/lofi.png" alt="Participants' suggestions for improvements" class="round outline">
+
+                </div>
+            </div>
+        </article>
+
+        <!-- Hi-Fidelity -->
+        <article class="full-width bisque">
+            <h2>Hi-Fi Prototype</h2>
+
+            <section class="wrapper gap--2rem"> 
+                <p>
+                    Feedback is separated into Comments or Markups, which also have different representative icons (bubble or pen-paper). 
+                    <br><br>
+                    <span style="color:red">Red dot</span> = new feedback, <span style="color:#3569D6">blue highlights</span> = selected item.
+                </p>
+            
+                <img src="/media/procreate/hifi-dropdown.gif" alt="Wireframe: Open Comments tab" class="round">
+
+                <p>
+                    Comments and Markups can be replied to, resolved, marked as unread, deleted, and edited. 
+                </p>
+    
+                <img src="/media/procreate/hifi-comments.gif" alt="Wireframe: Open Comments tab" class="round">
+    
+                <p>
+                    Click "+" to add a new Comment or Markup. Markup Layers, which serve as "suggested drawings", can be added as an official Layer to Procreate. 
+                </p>
+    
+                <img src="/media/procreate/hifi-markups.gif" alt="Wireframe: Open Comments tab" class="round">
+            </section>
+        </article>
+
+        <!-- Revisiting -->
+        <article class="full-width">
+            <section class="wrapper">
+                <div>
+                    <h2>Revisiting the prototype</h2>
+                    <p> 
+                        A few months after finishing this project with my group, I revisited our Procreate design. We didn't quite achieve a final polished look for the hi-fi prototype, so I decided to refine it on my own so the design matched Apple's iOS UI design.
+                    </p>
+                </div>
+            </section>
+
+            <div id="procreate--before-after">     
+                <div class="margin-bottom--2rem">
+                    <h2 class="underline--visible">Toggle Switch</h2>
+                    <img src="/media/procreate/before-after-toggle.svg" alt="Before and After Comparison of Toggle Switch">
+                </div>
+
+                <div>
+                    <h2 class="underline--visible">Comment Box</h2>
+                    <img src="/media/procreate/before-after-toggle.svg" alt="Before and After Comparison of Comment Box">
+                </div>
+            </div>
+        </article>
+
+        <!-- Hi-Fidelity -->
+        <section class="full-width bisque">
+            <div class="prototype-container">
+                <h2 class="margin-bottom--0rem">Final Hi-Fi Prototype</h2>
+
+                <a href="https://www.figma.com/proto/aMSjZNZnS0U2myMJ0dGrK1/MC---Procreate-Case-Study?page-id=8%3A234&node-id=402%3A8901&viewport=-536%2C-754%2C0.28&scaling=min-zoom&starting-point-node-id=402%3A8683&show-proto-sidebar=1" class="prototype__btn back-layer">
+                    <div class="top-layer animate">
+                        <img src="media/play.svg" alt="Play Icon">
+                        <p>View prototype</p>
+                    </div>
+                </a>
+            </div>
+
+            <section class="wrapper text-align--center" style="gap: 4rem">    
+                <div class="img-text">
+                    <img src="/media/procreate/final-comments.gif" alt="Procreate Final Comments gif" class="round outline">
+                    <figcaption>
+                        Example of communication between team members
+                    </figcaption>
+                </div>
+               
+                <div class="img-text">
+                    <img src="/media/procreate/final-markups.gif" alt="Procreate Final Markups gif" class="round outline">
+                    <figcaption>
+                        Example of a Markup superimposed over the illustration
+                    </figcaption>
+                </div>
+            </section>
+        </section>
+
+        <!-- Reflection -->
+        <article>
+            <h2>Reflection</h2>
+                <ul class="bullet-list">
+                    <p> While revisiting this project, some questions arose to me: </p>
+                    <li>
+                        What are other alternative solutions to solve Procreate's lack of collaboration capabilities?</li>
+                    <li>    
+                        What other features could assist or enable dynamic collaboration? </li>
+    
+                    <li>
+                        How viable is our solution in the real world? Would people use it?</li>
+                </ul>
+
+                <p>
+                    <br>We relied on spoken and written accounts of how people collaborated, instead of observing how they did so or what the process looked like. 
+
+                    <br><br>Nonetheless, this project demonstrates how  <span class="underline--visible"><strong>collaboration and communication tools could be brought into Procreate's workspace,</strong></span> turning an illustration program into one that supports multi-user teams.
+                </p>
+        </article>
+    </main>
+
+    <footer class="wrapper bisque">
+        <section id="footer--animate">    
+            <div class="back-layer">
+                <div class="top-layer footer gap--2rem beige">
+                    <ul class="footer__pages">
+                        <li class="page--left">
+                            <i class="gg-arrow-left to-hide"></i>
+                            <a href="/newspace.html">
+                                <h2 class="underline--hidden">Newspace</h2>
+                            </a>
+                            <i class="gg-arrow-right to-show"></i>
+                        </li>
+    
+                        <li class="page--right">
+                            <a href="/recyclenook.html">
+                                <h2 class="underline--hidden">RecycleNook</h2>
+                            </a>
+                            <i class="gg-arrow-right"></i>
+                        </li>
+                    </ul>
+
+                    <div class="footer__divider"></div>
+
+                    <div class="footer__contact">
+                        <h2>Come design with me!</h2>
+    
+                        <ul class="footer__links">
+                            <li>
+                                <i class="gg-arrow-top-right"></i>
+                                <a href="mailto:minnieschau16@gmail.com" target="blank">
+                                    <p class="underline--hidden">Email</p>
+                                </a>
+                            </li>
+        
+                            <li>
+                                <i class="gg-arrow-top-right"></i>
+                                <a href="https://www.linkedin.com/in/minnieschau/" target="blank">
+                                    <p class="underline--hidden">LinkedIn</p>
+                                </a>
+                            </li>
+        
+                            <li>
+                                <i class="gg-arrow-top-right"></i>
+                                <a href="https://bit.ly/MinnieChauDesignResume" target="blank">
+                                    <p class="underline--hidden">Resume</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <img src="media/toast_oven.svg" alt="Stay warm and toasty" id="toast">
+        </section>
+    </footer>
+
+</body>
+</html>
+
