@@ -813,6 +813,11 @@ footer {
     background-size: 0% 15%;
 }
 
+.misc--title-box {
+    padding: 40% 0;
+    text-align: center;
+}
+
 /* Table chart */
 table, td, th {
     text-align: left;
