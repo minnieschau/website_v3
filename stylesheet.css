@@ -139,6 +139,10 @@ a {
     border: 1px solid black;
 }
 
+.outline--grey {
+    border: 1px solid #E4E3E3;
+}
+
 .shadow {
     box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
 }
@@ -433,7 +437,7 @@ nav ul li:last-child {
 
 .img-text {
     display: grid;
-    gap: 2rem;
+    gap: 1.5rem;
     grid-template-rows: min-content;
 }
 
@@ -945,6 +949,10 @@ table tr:last-child th, table tr:last-child td {
         grid-template-columns: 1fr;
         gap: 4rem;
     }
+
+    .grid-2col.for-images {
+        gap: 4rem;
+     }
     
     .card-track {
         grid-auto-flow: row;
