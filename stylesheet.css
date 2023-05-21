@@ -60,7 +60,7 @@
         --fs--p--small: 0.875rem; /* 16px */
     } 
 
-    .top-layer p {
+    .top-layer p, li {
         font-size: var(--fs--p) !important;
     }
 }
@@ -94,7 +94,7 @@ h2 {
     line-height: 1.75;
 }
 
-p {
+p, li {
     font-size: var(--fs--p);
     font-weight: normal;
 }
@@ -220,7 +220,6 @@ nav ul li:last-child {
 .bullet-list li,
 .number-list li {
     margin-left: 2rem;
-    font-size: var(--fs--p);
     margin-top: 2rem;
 }
 
@@ -318,7 +317,7 @@ nav ul li:last-child {
     transition: top 0.5s ease, left 0.5s ease;
 }
 
-.top-layer p {
+.top-layer p, li {
     font-size: var(--fs--p--small);
 }
 
