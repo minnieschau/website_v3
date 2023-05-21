@@ -965,10 +965,6 @@ table tr:last-child th, table tr:last-child td {
         grid-template-columns: 1fr;
         gap: 4rem;
     }
-
-    .grid-2col.for-images {
-        gap: 4rem;
-     }
     
     .card-track {
         grid-auto-flow: row;
