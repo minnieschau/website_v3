@@ -816,7 +816,7 @@ footer {
     right: -30px; 
 }
 
-#index__projects .top-layer {
+.index__projects .top-layer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -825,7 +825,11 @@ footer {
     transition: all 0.5s ease;
 }
 
-#index__projects .top-layer:hover {
+.index__projects.coming-soon .top-layer{
+    grid-template-columns: 1fr;
+}
+
+.index__projects .top-layer:hover {
     background-color: var(--gold);
     transition: all 0.5s ease;
 }
@@ -836,7 +840,7 @@ footer {
     transition: all 0.5s ease;
 }
 
-#index__projects .top-layer:hover .project__img {
+.index__projects .top-layer:hover .project__img {
     background-color: transparent;
 }
 
@@ -845,11 +849,11 @@ footer {
     transition: all 0.5s ease;
 }
 
-#index__projects .top-layer:hover .project__img img {
+.index__projects .top-layer:hover .project__img img {
     scale: 0.95;
 }
 
-#index__projects .top-layer:hover .underline--visible {
+.index__projects .top-layer:hover .underline--visible {
     background-size: 0% 15%;
 }
 
@@ -917,7 +921,7 @@ table tr:last-child th, table tr:last-child td {
         right: 0px;
     }
 
-    #index__projects .top-layer {
+    .index__projects .top-layer {
         grid-template-columns: 1fr;
     }
 
@@ -1042,7 +1046,7 @@ table tr:last-child th, table tr:last-child td {
         --fs--h1: 3rem; /* 48px */
     } 
 
-    #index__projects .top-layer {
+    .index__projects .top-layer {
         gap: 2rem;
         padding: 2rem;
     }
