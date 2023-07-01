@@ -222,6 +222,7 @@ nav ul li:last-child {
 .number-list li {
     margin-left: 2rem;
     margin-top: 2rem;
+    font-size: var(--fs--p);
 }
 
 /* Elements to contain content */
