@@ -525,7 +525,7 @@ nav ul li:last-child {
 
 .hifi--mobile-gif img {
     border-radius: 0.75rem;
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+    border: 1px solid #E4E3E3;
 }
 
 /* Prototype Button */ 
@@ -950,7 +950,7 @@ table tr:last-child th, table tr:last-child td {
     }
 
     .hero--splash__ipad {
-        grid-template-columns: 1frfi;
+        grid-template-columns: 1fr;
     }
 
     .hero--splash__mobile .to-hide,
