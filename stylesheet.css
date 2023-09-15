@@ -892,6 +892,10 @@ table tr:last-child th, table tr:last-child td {
     border-bottom: none;
 }
 
+.anchor-links {
+    font-style:italic;
+}
+
 @media only screen and (max-width: 992px) {
 
 }
