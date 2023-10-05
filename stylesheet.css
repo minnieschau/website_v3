@@ -226,6 +226,11 @@ nav ul li:last-child {
     font-size: var(--fs--p);
 }
 
+#cafe-x-deliverables li {
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
 /* Elements to contain content */
 .wrapper {
     display: grid;
@@ -331,7 +336,6 @@ nav ul li:last-child {
 .text-align--center {
     text-align: center;
 }
-
 
 #newspace--before-after h2,
 .margin-bottom--0rem {
@@ -893,8 +897,11 @@ table tr:last-child th, table tr:last-child td {
     border-bottom: none;
 }
 
-.anchor-links {
-    font-style:italic;
+.anchor-links:hover {
+    background-image: linear-gradient(var(--gold) 0%, var(--gold) 100%);
+    background-size: 100% 90%;
+    background-position: bottom 0% left;
+    transition: all 0.45s ease;
 }
 
 @media only screen and (max-width: 992px) {
@@ -902,6 +909,11 @@ table tr:last-child th, table tr:last-child td {
 }
 
 @media only screen and (max-width: 768px) {
+
+    #cafe-x-deliverables li {
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
 
     #recyclenook--hifi {
         grid-template-columns: 1fr;
