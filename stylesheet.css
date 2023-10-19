@@ -180,7 +180,7 @@ a {
 .newspace { background-color: #ffd194; }
 .recyclenook { background-color: #bed9b6; }
 .cinefest { background-color: #FFEED4; }
-.ign-color {background-color: #9fafb886;}
+.ign-color {background-color: #c3cacf80;}
 
 /* Header */
 header {
@@ -751,6 +751,14 @@ footer {
     row-gap: 4rem;
 }
 
+#ign--hifi {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(28ch, 30ch));
+    align-items: center;
+    gap: 6vw;
+    justify-content: center;
+}
+
 /* About */
 #about--hero {
     text-align: center;
@@ -897,11 +905,19 @@ table tr:last-child th, table tr:last-child td {
     border-bottom: none;
 }
 
-.anchor-links:hover {
-    background-image: linear-gradient(var(--gold) 0%, var(--gold) 100%);
-    background-size: 100% 90%;
-    background-position: bottom 0% left;
+.anchor-links {
+    color: inherit;
     transition: all 0.45s ease;
+}
+
+.anchor-links:hover {
+    color: var(--gold);
+    transition: all 0.45s ease;
+}
+
+#ign-sketches {
+    grid-template-columns: repeat(2,1fr) !important; 
+    gap: 2rem;
 }
 
 @media only screen and (max-width: 992px) {
@@ -909,6 +925,11 @@ table tr:last-child th, table tr:last-child td {
 }
 
 @media only screen and (max-width: 768px) {
+
+    #ign-sketches {
+        grid-template-columns: repeat(2,1fr) !important; 
+        gap: 1rem;
+    }
 
     #cafe-x-deliverables li {
         margin-left: 1rem;
@@ -922,6 +943,10 @@ table tr:last-child th, table tr:last-child td {
     #recyclenook--hifi img {
         margin: auto;
         width: 50%;
+    }
+
+    #ign--hifi {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     #index--hero{
