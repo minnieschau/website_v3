@@ -751,14 +751,14 @@ footer {
 }
 
 #about--intro {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 4rem;
     align-items: center;
 }
 
 #about--intro img {
-    height: 400px;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -1038,12 +1038,13 @@ table tr:last-child th, table tr:last-child td {
     }
     
     #about--intro {
+        display: flex;
         flex-direction: column;
         gap: 3rem;
     }
 
     #about--intro img {
-        object-position: right 20%;
+        object-position: right 25%;
     }
 
     #about--fun {
