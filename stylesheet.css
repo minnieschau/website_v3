@@ -531,6 +531,7 @@ nav ul li:last-child {
 .hifi--mobile-gif img {
     border-radius: 0.75rem;
     border: 1px solid #E4E3E3;
+    border: 1px solid black;
 }
 
 /* Prototype Button */ 
@@ -623,33 +624,23 @@ footer {
     list-style: none;
 }
 
-.footer__links li,
-.footer__pages li {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    color: black;
-    gap: 1rem;
-    transition: all 0.5s ease;
-} 
-
-.footer__links a {
-    display: inline !important;
-    align-items: center;
-    gap: 1rem;
+.footer__links li {
+    display: inline;
 }
 
-.footer__links li i {
-    margin-top: -2px;
-    margin-left: 4px;
+.footer__links img {
+    width: 1.25rem;
+    margin-bottom: -2px;
+    margin-right: 1rem;
     transform: translateY(0px);
     color: black;
     transition: all 0.5s ease;
+    text-align: center;
 }
 
 /* anchor hover, icon move up */
-.footer__links li:hover i { 
-    transform: translateY(-8px);
+.footer__links a:hover img { 
+    Transform: translateY(-8px);
 }
 
 .footer__divider {
@@ -660,8 +651,8 @@ footer {
     margin-right: -2rem;
 }
 
-.footer__links li:hover p,
-.footer__pages li:hover h2 {
+.footer__links li a:hover p,
+.footer__pages li a:hover h2 {
     background-size: 100% 15%;
 }
 
@@ -670,22 +661,37 @@ footer {
     justify-content: space-between;
     gap: 1rem;
     padding: 1rem;
+    list-style: none;
+    margin: 0;
 }
 
-.footer__pages li i {
+.footer__pages img {
+    width: 1.75rem;
+    margin-bottom: -6px;
+}
+
+.footer__pages li img {
     transform: translateX(0px);
     transition: all 0.5s ease;
+}
+
+.page--left h2 {
+    margin-left: 1rem;
+}
+
+.page--right h2 {
+    margin-right: 1rem;
 }
 
 .page--left .to-show {
     display: none;
 }
 
-.page--left:hover i {
+.page--left:hover img {
     transform: translateX(-8px);
 }
 
-.page--right:hover i {
+.page--right:hover img {
     transform: translateX(8px);
 }
 
@@ -1029,11 +1035,16 @@ table tr:last-child th, table tr:last-child td {
         display: none;
     }
 
-    .page--left .to-show {
-        display: block;
+    .page--left h2 {
+        margin-left: 0;
+        margin-right: 1rem;
     }
 
-    .page--left:hover i {
+    .page--left .to-show {
+        display: inline;
+    }
+
+    .page--left:hover img {
         transform: translateX(8px);
     }
     
@@ -1085,7 +1096,6 @@ table tr:last-child th, table tr:last-child td {
     .footer__contact, .footer__pages {
         padding: 0rem;
     }
-
 
     .footer__links {
         grid-template-columns: 1fr;
@@ -1159,10 +1169,8 @@ table tr:last-child th, table tr:last-child td {
         gap: 0rem;
     }
 
-    .footer__contact img {
-        margin-top: 2rem;
-        max-width: 50%;
-        height: 100%;
+    .footer__pages img {
+        width: 1.5rem;
     }
 
     #recyclenook--hifi img {
